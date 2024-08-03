@@ -1,0 +1,1 @@
+-- INSERT INTO product_purchaseds VALUES('2', 4, 2);

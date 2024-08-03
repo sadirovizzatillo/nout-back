@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "database": "nout",
+            "username": "postgres",
+            "name": "Nout",
+            "password": "a-z123456789"
+        }
+    ]
+}
