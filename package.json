@@ -14,7 +14,7 @@
     "supertest": "^6.3.4"
   },
   "name": "nout-back",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test-watch": "jest --watch",

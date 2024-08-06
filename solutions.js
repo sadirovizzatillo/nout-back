@@ -6483,3 +6483,56 @@ permute([1,2,3,4]);
 
 // console.log(twoSum([-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1], 2));
 // console.log(twoSum([2,7,11,31], 9));
+
+
+// var findHighAccessEmployees = function(access_times) {
+//     const hashTable = {};
+//     const result = [];
+//     const sortedArr = access_times.sort((a,b) => {
+//         if(a[0] === b[0]){
+//             return timeToMinutes(a[1]) - timeToMinutes(b[1]);
+//         }else{
+//             return a[0] > b[0] ? 1 : -1;
+//         }
+//     });
+//
+//
+//     for(let i = 0; i < sortedArr.length; i++){
+//         const employee = sortedArr[i][0];
+//         const timeInMinutes = timeToMinutes(sortedArr[i][1]);
+//
+//         if (hashTable[employee]) {
+//             hashTable[employee].push(timeInMinutes);
+//         } else {
+//             hashTable[employee] = [timeInMinutes];
+//         }
+//     }
+//
+//     for(let key in hashTable) {
+//         if(hashTable[key].length >= 3){
+//             for(let i = 0; i <= hashTable[key].length - 3; i++){
+//                 if(hashTable[key][i + 2] - hashTable[key][i] < 60){
+//                     result.push(key);
+//                     break;
+//                 }
+//             }
+//         }
+//     }
+//
+//     console.log(result, hashTable)
+//     return result;
+// };
+//
+// function timeToMinutes(time) {
+//     const hours = parseInt(time.substring(0, 2));
+//     const minutes = parseInt(time.substring(2, 4));
+//     return hours * 60 + minutes;
+// }
+
+
+// findHighAccessEmployees([["a","0549"],["b","0457"],["a","0532"],["a","0621"],["b","0540"]]);
+// findHighAccessEmployees([["d","0002"],["c","0808"],["c","0829"],["e","0215"],["d","1508"],["d","1444"],["d","1410"],["c","0809"]]);
+// findHighAccessEmployees([["cd","1025"],["ab","1025"],["cd","1046"],["cd","1055"],["ab","1124"],["ab","1120"]]);
+// findHighAccessEmployees([["akuhmu","0454"],["aywtqh","0523"],["akuhmu","0518"],["ihhkc","0439"],["ihhkc","0508"],["akuhmu","0529"],["aywtqh","0530"],["aywtqh","0419"]]);
+// findHighAccessEmployees([["uixav","0510"],["zbggqxck","0545"],["hyxoa","0619"],["uixav","0517"],["zbggqxck","0609"],["zbggqxck","0527"],["zkjxcrd","0545"],["uixav","0617"],["uixav","0530"]]);
+// findHighAccessEmployees([["qzgyyji","1945"],["qzgyyji","1855"],["jsxkxtugi","1859"],["hhjuaxal","1940"],["hhjuaxal","1831"],["jsxkxtugi","1841"],["hhjuaxal","1918"],["jsxkxtugi","1941"],["hhjuaxal","1852"]]);
